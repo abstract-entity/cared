@@ -1,5 +1,18 @@
-:host {
-    background-image: url("/assets/back.png");
+header {
+    background-color: #9BC9FF;
+    height: 7%;
+
+
+
+
+}
+
+#stef {
+    width: 20%;
+    height: 20%;
+    margin-top: 3%;
+    margin-left: 2%;
+
 }
 
 .rectangle {
@@ -26,4 +39,39 @@
     margin-left: 4%;
     margin-right: 4%;
     font-size: 50px;
+}
+
+
+
+.text {
+    margin: 0;
+}
+
+
+
+
+.nombre {
+    font-weight: 400;
+    font-size: xx-large;
+    margin-bottom: 0;
+
+}
+
+.material-icons {
+    font-size: 50px;
+    margin-right: 5%;
+    text-align: center;
+
+}
+
+.vert {
+    color: #549329;
+}
+
+.jaune {
+    color: #DF9837;
+}
+
+.violet {
+    color: #673A99;
 }
