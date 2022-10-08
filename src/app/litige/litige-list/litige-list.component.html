@@ -1,3 +1,9 @@
-<a *ngFor="let litige of litiges" routerLink="/litiges/{{litige.id}}">
-  {{litige.name}}
-</a>
+<div *ngFor="let litige of litiges" fxLayout="row" fxLayoutAlign="space-around center" routerLink="/litige/{{litige.id}}">
+  <div fxFlex class="name">{{ litige.name }}</div>
+  <div fxFlex="30" class="date">{{ litige.created | date:'dd/MM H:mm' }}</div>
+  <div fxFlex="15" class="state">
+    <button mat-icon-button>
+      <mat-icon class="{{ litige.canal ? 'solved' : 'unsolved' }}">{{ litige.canal ? 'done' : 'question_mark' }}</mat-icon>
+    </button>
+  </div>
+</div>

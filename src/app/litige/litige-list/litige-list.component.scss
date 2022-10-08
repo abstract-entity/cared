@@ -1,0 +1,19 @@
+.name {
+  padding: 0 10px;
+}
+
+.state {
+  text-align: center;
+
+  mat-icon {
+    font-weight: bold;
+
+    &.solved {
+      color: green;
+    }
+
+    &.unsolved {
+      color: orange;
+    }
+  }
+}

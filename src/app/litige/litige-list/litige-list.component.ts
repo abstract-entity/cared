@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Litige } from '../litige.model';
+import { LitigeService } from '../litige.service';
 
 @Component({
   selector: 'app-litige-list',
@@ -7,23 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LitigeListComponent implements OnInit {
 
-  litiges = [{
-    id: 1,
-    name: 'Litige 1',
-  },{
-    id: 2,
-    name: 'Litige 2',
-  },{
-    id: 3,
-    name: 'Litige 3',
-  },{
-    id: 4,
-    name: 'Litige 4',
-  }]
+  litiges: Litige[] = []
 
-  constructor() { }
+  constructor(private litigeServiece: LitigeService) { }
 
   ngOnInit(): void {
+    this.litiges = this.litigeServiece.list().sort((a, b) => a.created.getTime() - b.created.getTime())
   }
 
 }

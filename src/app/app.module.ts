@@ -9,6 +9,11 @@ import { LitigeDetailComponent } from './litige/litige-detail/litige-detail.comp
 import { LitigeListComponent } from './litige/litige-list/litige-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatListModule } from '@angular/material/list';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -19,10 +24,16 @@ import { MatButtonModule } from '@angular/material/button';
     LitigeListComponent
   ],
   imports: [
-    BrowserModule,
+    FlexLayoutModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    BrowserModule,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
+    MatMenuModule,
+    MatToolbarModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,2 +1,16 @@
-<div routerLink="/litiges">litiges</div>
-<div routerLink="/achievement">synthèse</div>
+<mat-toolbar>
+  <button mat-icon-button [matMenuTriggerFor]="afterMenu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Litige</span>
+  <mat-menu #afterMenu="matMenu" xPosition="after">
+    <button mat-menu-item routerLink="/litiges">
+      <mat-icon>report_problem</mat-icon>
+      Litiges
+    </button>
+    <button mat-menu-item routerLink="/achievement">
+      <mat-icon>workspace_premium</mat-icon>
+      Synthèse
+    </button>
+  </mat-menu>
+</mat-toolbar>
