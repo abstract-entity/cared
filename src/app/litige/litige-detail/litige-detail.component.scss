@@ -1,0 +1,25 @@
+:host {
+  padding: 8px;
+  display: block;
+  
+  .name {
+    font-size: 40px;
+  }
+  
+  mat-panel-title mat-icon {
+    font-weight: bold;
+    margin-right: 8px;
+
+    &.solved {
+      color: green;
+    }
+
+    &.unsolved {
+      color: orange;
+    }
+  }
+  
+  .buttons mat-icon {
+    margin-right: 8px;
+  }
+}

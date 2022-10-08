@@ -14,6 +14,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -29,11 +31,12 @@ import { MatMenuModule } from '@angular/material/menu';
     BrowserAnimationsModule,
     BrowserModule,
     MatButtonModule,
+    MatCheckboxModule,
     MatIconModule,
     MatListModule,
     MatMenuModule,
     MatToolbarModule,
-    
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

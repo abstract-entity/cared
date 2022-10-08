@@ -1,8 +1,12 @@
+import { Anomaly } from "./anomaly.model";
 import { Canal } from "./canal.model";
 
 export interface Litige {
-    id: number;
+    id: string;
     name: string;
-    canal: Canal | null;
+    obs: string;
+    canal: Canal | undefined;
+    anomaly: Anomaly;
     created: Date;
+    photos: string[];
 }

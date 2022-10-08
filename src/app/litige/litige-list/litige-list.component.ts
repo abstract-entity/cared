@@ -16,5 +16,4 @@ export class LitigeListComponent implements OnInit {
   ngOnInit(): void {
     this.litiges = this.litigeServiece.list().sort((a, b) => a.created.getTime() - b.created.getTime())
   }
-
 }

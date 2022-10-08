@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Litige } from '../litige.model';
+import { LitigeService } from '../litige.service';
 
 @Component({
   selector: 'app-litige-detail',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LitigeDetailComponent implements OnInit {
 
-  constructor() { }
+  litige!: Litige;
+
+  constructor(private route: ActivatedRoute, private litigeService: LitigeService) { }
 
   ngOnInit(): void {
+    this.litige = this.litigeService.get(this.route.snapshot.params['id']);
   }
 
 }

@@ -1,19 +1,29 @@
-.name {
-  padding: 0 10px;
-}
+.litige {
 
-.state {
-  text-align: center;
+  &:first-child {
+    border-top: 1px solid grey;
+  }
 
-  mat-icon {
-    font-weight: bold;
+  border-bottom: 1px solid grey;
+  padding: 5px 0;
 
-    &.solved {
-      color: green;
-    }
+  .name {
+    padding: 0 10px;
+  }
 
-    &.unsolved {
-      color: orange;
+  .state {
+    text-align: center;
+
+    mat-icon {
+      font-weight: bold;
+
+      &.solved {
+        color: green;
+      }
+
+      &.unsolved {
+        color: orange;
+      }
     }
   }
 }
