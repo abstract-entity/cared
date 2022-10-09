@@ -25,7 +25,7 @@ export class LitigeService {
     anomaly: Anomaly.RA,
     photos: []
   }, {
-    id: '0Y6220389567',
+    id: '0Y6220389589',
     name: 'KFC Nantes',
     obs: 'RAS',
     canal: undefined,
@@ -69,6 +69,11 @@ export class LitigeService {
   }
 
   list(): Litige[] {
+    const ids = this.litiges.map(l => l.id)
+    const uniqueIds = new Set(ids)
+    if (ids.length != uniqueIds.size) {
+      throw new Error('Duplicate record in litiges list')
+    }
     return this.litiges
   }
 }

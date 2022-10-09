@@ -4,7 +4,7 @@
   <div fxFlex="20" class="date">{{ litige.created | date:'dd/MM H:mm' }}</div>
   <div fxFlex="15" class="state">
     <button mat-icon-button>
-      <mat-icon class="{{ !!litige.canal ? 'solved' : 'unsolved' }}">{{ !!litige.canal ? 'done' : 'question_mark' }}</mat-icon>
+      <mat-icon class="{{ !!litige.canal ? 'solved' : 'unsolved' }}">{{ canalToIcon(litige.canal) }}</mat-icon>
     </button>
   </div>
 </div>

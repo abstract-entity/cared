@@ -5,6 +5,16 @@
   .name {
     font-size: 40px;
   }
+
+  .time {
+    text-align: center;
+  }
+
+  .obs {
+    font-style: italic;
+    color: #3c3c3c;
+    margin: 8px 0;
+  }
   
   mat-panel-title mat-icon {
     font-weight: bold;

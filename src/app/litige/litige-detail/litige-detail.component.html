@@ -1,24 +1,24 @@
-<div>{{ litige.anomaly }}</div>
+<!-- <div>{{ litige.id }}</div> -->
 <div fxLayout="row" fxLayoutAlign="space-around center">
-    <div fxFlex class="name">{{ litige.name }}</div>
-    <div fxFlex="20">{{ litige.created | date:'dd/MM H:mm' }}</div>
+  <div fxFlex class="name">{{ litige.name }}</div>
+  <div fxFlex="100px" class="time">{{ litige.created | date:'dd/MM/YY HH:mm' }}</div>
 </div>
-<div >
-    
+<div>{{ litige.anomaly }}</div>
+<!-- <div fxLayout="row" fxLayoutAlign="space-around center">
+  <div fxFlex>{{ litige.id }}</div>
+</div> -->
+<!-- <mat-icon class="{{ litige.canal ? 'solved' : 'unsolved' }}">{{ litige.canal ? 'done' : 'question_mark' }}</mat-icon> -->
+<!-- 
+{{ litige.canal ? litige.canal : '' }} -->
 
-<mat-icon class="{{ litige.canal ? 'solved' : 'unsolved' }}">{{ litige.canal ? 'done' : 'question_mark' }}</mat-icon>
-{{ litige.id }}
-
-{{ litige.canal ? litige.canal : '' }}
-
-<p>{{ litige.obs }}</p> 
+<div class="obs">{{ litige.obs }}</div> 
 
 <img fxFill *ngFor="let photo of litige.photos" src="{{ photo }}">
 
 <div *ngIf="!litige.canal" class="buttons" fxLayout="column" fxLayoutAlign="space-around stretch" fxLayoutGap="5px">
-  <button mat-raised-button color="primary"><mat-icon>local_shipping</mat-icon>Re-livraison</button>
-  <button mat-raised-button color="primary"><mat-icon>card_giftcard</mat-icon>Don banque alimentaire</button>
-  <button mat-raised-button color="primary"><mat-icon>storefront</mat-icon>Revente en interne</button>
-  <button mat-raised-button color="primary"><mat-icon>recycling</mat-icon>Recyclage</button>
-  <button mat-raised-button color="warn"><mat-icon>delete_outline</mat-icon>Destruction</button>
+  <button mat-raised-button color="primary" (click)="solve(canal.REDELIVERY)"><mat-icon>local_shipping</mat-icon>Re-livraison</button>
+  <button mat-raised-button color="primary" (click)="solve(canal.GIFT)"><mat-icon>card_giftcard</mat-icon>Don banque alimentaire</button>
+  <button mat-raised-button color="primary" (click)="solve(canal.SELL)"><mat-icon>storefront</mat-icon>Revente en interne</button>
+  <button mat-raised-button color="primary" (click)="solve(canal.RECYCLE)"><mat-icon>recycling</mat-icon>Recyclage</button>
+  <button mat-raised-button color="warn" (click)="solve(canal.DESTRUCTION)"><mat-icon>delete_outline</mat-icon>Destruction</button>
 </div>
