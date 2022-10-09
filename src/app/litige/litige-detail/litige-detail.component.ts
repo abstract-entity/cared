@@ -43,4 +43,21 @@ export class LitigeDetailComponent implements OnInit {
     this.litige.canal = canal;
     this.router.navigate(['/litiges']);
   }
+
+  canalToIcon(canal: Canal | undefined): string {
+    switch (canal) {
+      case Canal.REDELIVERY:
+        return 'local_shipping'
+      case Canal.GIFT:
+        return 'card_giftcard'
+      case Canal.SELL:
+        return 'storefront'
+      case Canal.RECYCLE:
+        return 'recycling'
+      case Canal.DESTRUCTION:
+        return 'delete_outline'
+      default:
+        return 'question_mark'
+    }
+  }
 }

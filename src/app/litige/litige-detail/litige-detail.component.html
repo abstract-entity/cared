@@ -1,8 +1,15 @@
 <!-- <div>{{ litige.id }}</div> -->
 <div fxLayout="row" fxLayoutAlign="space-around center">
   <div fxFlex class="name">{{ litige.name }}</div>
-  <div fxFlex="100px" class="time">{{ litige.created | date:'dd/MM/YY HH:mm' }}</div>
+  <div fxFlex="100px" class="time">
+    <div>{{ litige.created | date:'dd/MM/YY HH:mm' }}</div>
+  </div>
 </div>
+<div *ngIf="!!litige.canal" class="solved" fxLayout="row" fxLayoutAlign="space-around center">
+  <div fxFlex>Litigé traité</div>
+  <mat-icon fxFlex="100px">{{ canalToIcon(litige.canal) }}</mat-icon>
+</div>
+
 <div class="anomaly">{{ litige.anomaly }}</div>
 <!-- <div fxLayout="row" fxLayoutAlign="space-around center">
   <div fxFlex>{{ litige.id }}</div>

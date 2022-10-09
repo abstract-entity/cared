@@ -10,7 +10,7 @@ export class LitigeService {
 
   litiges: Litige[] = [{
     id: '04L220702155',
-    name: '	BK DIJON SAINT-APOLLINAIRE (218350) / ST-APOLLINAIRE',
+    name: 'BK DIJON SAINT-APOLLINAIRE',
     obs: 'CO - Refusé non commandé : marchandise restituée',
     canal: undefined,
     created: new Date(2022, 9, 8, 9, 52, 45),
@@ -18,7 +18,7 @@ export class LitigeService {
     photos: ['/assets/litiges/9.jpg']
   }, {
     id: '134228C45143',
-    name: 'BK CASTELNAU-LE-LEZ (34E361)',
+    name: 'BK CASTELNAU-LE-LEZ',
     obs: 'marchandise restituée',
     canal: undefined,
     created: new Date(2022, 9, 8, 9, 42, 57),
@@ -26,7 +26,7 @@ export class LitigeService {
     photos: ['/assets/litiges/1.JPG', '/assets/litiges/2.JPG', '/assets/litiges/3.JPG']
   }, {
     id: '134228C44903',
-    name: 'BK LE MUY (83K261) / LE MUY',
+    name: 'BK LE MUY',
     obs: '2204 TOMATE 57/67 1 CO RP Refusé non conforme marchandise non restituée détruite mauvaise qualité',
     canal: undefined,
     created: new Date(2022, 9, 8, 9, 33, 45),
@@ -34,7 +34,7 @@ export class LitigeService {
     photos: ['/assets/litiges/7.jpg']
   }, {
     id: '418228A45145',
-    name: 'BK PARC D\'AQUITAINE ST ANDRÉ DE CUB (33P244) / ST-ANDRE-DE-CUBZAC',
+    name: 'BK PARC D\'AQUITAINE ST ANDRÉ DE CUB',
     obs: '2146 TOMATES 6kg 1 CO RP Refusé non conforme marchandise restituée',
     canal: undefined,
     created: new Date(2022, 9, 8, 9, 32, 45),
@@ -42,7 +42,7 @@ export class LitigeService {
     photos: ['/assets/litiges/8.jpg']
   }, {
     id: '131228C19313',
-    name: 'BK DIJON SAINT-APOLLINAIRE (218350) / ST-APOLLINAIRE',
+    name: 'BK DIJON SAINT-APOLLINAIRE',
     obs: 'marchandise non restituée détruite',
     canal: Canal.DESTRUCTION,
     created: new Date(2022, 9, 8, 8, 41, 45),
@@ -50,7 +50,7 @@ export class LitigeService {
     photos: ['/assets/litiges/6.JPG']
   }, {
     id: '134228C44944',
-    name: 'BK MONTÉLIMAR SOLEIL LEVANT (268687) / MONTELIMAR',
+    name: 'BK MONTÉLIMAR SOLEIL LEVANT',
     obs: 'marchandise restituée ouvert dans la palette',
     canal: Canal.REDELIVERY,
     created: new Date(2022, 9, 7, 15, 9, 0),
@@ -58,7 +58,7 @@ export class LitigeService {
     photos: ['/assets/litiges/4.JPG', '/assets/litiges/5.JPG']
   }, {
     id: '134228C45224',
-    name: 'BK MARSEILLE CASTELLANE (13R010) / MARSEILLE',
+    name: 'BK MARSEILLE CASTELLANE',
     obs: `52086 CORNICHON TRANCHE 1782P- 6 sa 3 CO RC Refusé non commandé marchandise restituée
 52096 HUILE FRITEUSE SANS PALME NE 4 CO RC Refusé non commandé marchandise restituée
 60276 SEAU MOUTARDE A L'ANCIENNE 3 1 CO RC Refusé non commandé marchandise restituée
@@ -74,7 +74,7 @@ export class LitigeService {
     photos: []
   }, {
     id: '134228C45697',
-    name: 'BK SEYNE SUR MER (83F952) / SEYNE SUR MER',
+    name: 'BK SEYNE SUR MER',
     obs: '91270 FOURME D\'AMBERT TRANCHE 20G 10 CO RC Refusé non commandé, marchandise restituée',
     canal: Canal.SELL,
     created: new Date(2022, 9, 5, 17, 1, 45),
@@ -90,7 +90,7 @@ export class LitigeService {
     photos: []
   }, {
     id: '418228A45339',
-    name: 'BK LABARTHE SUR LEZE (31J319) / LABARTHE-SUR-LEZE',
+    name: 'BK LABARTHE SUR LEZE',
     obs: '1602 WINGS CHICKEN 400P V3- 16 sachet 1 CO RP Refusé non conforme marchandise non restituée détruite aucune traçabilité',
     canal: Canal.DESTRUCTION,
     created: new Date(2022, 9, 5, 9, 17, 45),

@@ -1,4 +1,4 @@
-<div *ngFor="let litige of litiges" class="litige" fxLayout="row" fxLayoutAlign="space-around center" routerLink="/litige/{{litige.id}}">
+<div *ngFor="let litige of litiges; let index = index" [ngClass]="{'odd': 0 === index % 2}" class="litige" fxLayout="row" fxLayoutAlign="space-around center" routerLink="/litige/{{litige.id}}">
   <div fxFlex class="name">{{ litige.name }}</div>
   <div fxFlex class="name">{{ litige.anomaly }}</div>
   <div fxFlex="15" class="date">{{ litige.created | date:'dd/MM H:mm' }}</div>

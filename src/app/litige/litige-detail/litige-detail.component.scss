@@ -3,7 +3,18 @@
   display: block;
   
   .name {
-    font-size: 30px;
+    font-size: 25px;
+  }
+
+  .solved {
+    color: white;
+    background-color: green;
+    text-align: center;
+    font-size: 25px;
+    mat-icon {
+      min-height: 50px;
+      font-size: 50px;
+    }
   }
 
   .time {
