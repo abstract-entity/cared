@@ -16,7 +16,7 @@ export class LitigeListComponent implements OnInit {
   constructor(private litigeServiece: LitigeService, private menuService: MenuService) { }
 
   ngOnInit(): void {
-    this.litiges = this.litigeServiece.list().sort((a, b) => a.created.getTime() - b.created.getTime())
+    this.litiges = this.litigeServiece.list().sort((a, b) => b.created.getTime() - a.created.getTime())
     this.menuService.title = `Menu`
   }
 

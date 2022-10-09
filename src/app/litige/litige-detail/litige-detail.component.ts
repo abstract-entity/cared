@@ -29,7 +29,9 @@ export class LitigeDetailComponent implements OnInit {
       this.dialog
         .open(DeliverySelectionComponent)
         .afterClosed().subscribe(recipient => {
-          this.assignCanal(canal, recipient)
+          if(recipient) {
+            this.assignCanal(canal, recipient)
+          }
         });
     } else {
       this.assignCanal(canal);

@@ -1,64 +1,48 @@
 <div style="height: 100%;">
-    <div class="rectangle">
-        <span id="rosette" class="material-icons">
-            workspace_premium
-        </span>
-        <p>Félicitations! Vous faites <br>
-            mieux que 80% de nos clients </p>
-    </div>
-   <ul>
+  <div class="rectangle">
+    <span id="rosette" class="material-icons">
+      workspace_premium
+    </span>
+    <p style="margin-right: 10px;">Félicitations! Vous contribuez à <br>
+      réduire le gaspillage ainsi que préserver la planète </p>
+  </div>
+  <!-- <ul>
     <li class="deroulant"> <a>A la semaine</a>
-    <ul class="sous">
+      <ul class="sous">
         <li><a>Au mois</a></li>
         <li><a>Au cours des 6 derniers mois</a></li>
         <li><a>Sur l'année</a></li>
-    </ul></li>
-   </ul>
-
-    <div fxLayout="column" fxLayoutAlign="space-around center">
-        <div class="vert" fxLayout="row" fxLayoutAlign="space-evenly center">
-    
-                <span fxFlex="25" id="plant" class="material-icons">
-                    compost
-                </span>
-                <div fxLayout="column" fxLayoutAlign="center" fxFlex>
-                    <p class="nombre">200 kg</p>
-
-                    <p class="text">de CO2 évités</p>
-                </div>
-        
-        </div>
-        <div class="jaune" fxLayout="row" fxLayoutAlign="space-evenly center">
-                <span fxFlexOffset="20" id="people" class="material-icons">
-                    diversity_3
-                </span>
-                <div fxLayout="column" fxLayoutAlign="center" fxFlex="80">
-                    <p class="nombre">100 kg</p>
-                    <p class="text">de nourriture donnés à des banques alimentaires</p>
-                </div>
-            
-        </div>
-        <div class="violet" fxLayout="row" fxLayoutAlign="space-evenly center">
-
-                <span fxFlex="20" id="truck" class="material-icons">
-                    local_shipping
-                </span>
-                <div fxLayout="column" fxLayoutAlign="center" fxFlex="65">
-                    <p class="nombre">30</p>
-                    <p class="text">palettes rachetées via l'appli</p>
-                </div>
-            
-        </div>
-        <div class="vert" fxLayout="row" fxLayoutAlign="space-evenly center">
-    
-                <span fxFlex="20" id="recycle" class="material-icons">
-                    recycling
-                </span>
-                <div fxLayout="column" fxLayoutAlign="center" fxFlex>
-                    <p class="nombre">3 tonnes</p>
-                    <p class="text">de produits compostés</p>
-                </div>
-        
-        </div>
+      </ul>
+    </li>
+  </ul> -->
+  <div fxLayout="column" fxLayoutAlign="space-around stretch">
+    <div fxFlex="20" fxLayout="row" fxLayoutAlign="start stretch" class="row vert">
+      <div class="icon" fxFlex="30"><mat-icon fxFill>compost</mat-icon></div>
+      <div class="text" fxFlex fxLayout="column" fxLayoutAlign="center stretch">
+        <div class="big-text">200 kg</div>
+        <div>de CO2 évités</div>
+      </div>
     </div>
+    <div fxFlex="20" fxLayout="row" fxLayoutAlign="start stretch" class="row jaune">
+      <div class="icon" fxFlex="30"><mat-icon fxFill>diversity_3</mat-icon></div>
+      <div class="text" fxFlex fxLayout="column" fxLayoutAlign="center stretch">
+        <div class="big-text">100 kg</div>
+        <div>de nourriture donnés à des<br/> banques alimentaires</div>
+      </div>
+    </div>
+    <div fxFlex="20" fxLayout="row" fxLayoutAlign="start stretch" class="row violet">
+      <div class="icon" fxFlex="30"><mat-icon fxFill>local_shipping</mat-icon></div>
+      <div class="text" fxFlex fxLayout="column" fxLayoutAlign="center stretch">
+        <div class="big-text">30</div>
+        <div>palettes rachetées via l'appli</div>
+      </div>
+    </div>
+    <div fxFlex="20" fxLayout="row" fxLayoutAlign="start stretch" class="row vert">
+      <div class="icon" fxFlex="30"><mat-icon fxFill>recycling</mat-icon></div>
+      <div class="text" fxFlex fxLayout="column" fxLayoutAlign="center stretch">
+        <div class="big-text">3 tonnes</div>
+        <div>de produits compostés</div>
+      </div>
+    </div>
+  </div>
 </div>
